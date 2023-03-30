@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registrarmeactivity">
+
+    <LinearLayout
+
+        android:layout_width="372dp"
+        android:layout_height="694dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+            android:layout_width="206dp"
+            android:layout_height="198dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/img" />
+
+        <EditText
+
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textPersonName" />
+
+        <EditText
+
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Agrega una contraseña mayor a 5 caracteres"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+
+            android:id="@+id/contrasenaconfirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Confirme la contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+
+            android:id="@+id/iniciarsesionbtm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="registrarme"
+            android:onClick="registrarusuario"
+            android:background="@drawable/diseno_boton"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfilempleado">
+
+    <TextView
+
+        android:id="@+id/MiPerfil"
+        android:layout_width="299dp"
+        android:layout_height="33dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Mi Perfil(empleado)"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout4"
+        android:layout_width="403dp"
+        android:layout_height="205dp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146">
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.50dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/gris"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+
+            android:id="@+id/imageView7"
+            android:layout_width="136dp"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_perfil"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+
+            android:id="@+id/nombre"
+            android:layout_width="366dp"
+            android:layout_height="42dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="CARLOS SANTIAGO SANDOVAL MEDINA"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="387dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/diseno_boton1"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="MissingConstraints,UnknownId">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="356dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:onClick="cambiarcontrasena"
+            android:text="Cambiar contraseña"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout13"
+        android:layout_width="387dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="364dp"
+        android:layout_weight="1"
+        android:background="@drawable/diseno_boton1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId">
+
+        <TextView
+
+            android:id="@+id/textView4"
+            android:layout_width="356dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Agregar producto"
+            android:textColor="@color/white"
+            android:onClick="agregarproducto"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout14"
+        android:layout_width="387dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="444dp"
+        android:layout_weight="1"
+        android:background="@drawable/diseno_boton1"
+        android:gravity="center"
+        android:onClick="cerrarsesion"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId">
+
+        <TextView
+            android:id="@+id/cerrarsesion"
+            android:layout_width="356dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Cerrar sesion"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
