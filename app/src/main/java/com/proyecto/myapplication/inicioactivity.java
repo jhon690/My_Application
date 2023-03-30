@@ -24,27 +24,22 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 public class inicioactivity extends AppCompatActivity {
 
-    private List<Productos> listpro = new ArrayList<Productos>();
+    private final List<Productos> listpro = new ArrayList<Productos>();
     ArrayAdapter<Productos> arrayAdapterProductos;
-
     SearchView busqueda;
     ImageButton imagenperfil, imagennotificacion;
     EditText nombre, marca, ID, lote, date;
     TextView textView;
     ListView productos;
-
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-
     Productos productoSelected;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,8 +82,8 @@ public class inicioactivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 listpro.clear();
-                for (DataSnapshot objSnapshot : dataSnapshot.getChildren()){
-                    Productos p = objSnapshot.getValue (Productos.class);
+                for (DataSnapshot objSnapshot : dataSnapshot.getChildren()) {
+                    Productos p = objSnapshot.getValue(Productos.class);
                     listpro.add(p);
 
                     arrayAdapterProductos = new ArrayAdapter<Productos>(inicioactivity.this, android.R.layout.simple_list_item_1, listpro);
@@ -108,19 +103,19 @@ public class inicioactivity extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
 
         firebaseDatabase = FirebaseDatabase.getInstance();
-       // firebaseDatabase.setPersistenceEnabled(true);
+        // firebaseDatabase.setPersistenceEnabled(true);
         databaseReference = firebaseDatabase.getReference();
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_ic,menu);
+        getMenuInflater().inflate(R.menu.menu_ic, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
 
         String nombrep = nombre.getText().toString();
         String marcap = marca.getText().toString();
@@ -128,14 +123,13 @@ public class inicioactivity extends AppCompatActivity {
         String lotep = lote.getText().toString();
         String datep = date.getText().toString();
 
-        switch (item.getItemId()){
-            case R.id.icon_add:{
-                if (nombrep.equals("") |  marcap.equals("") | IDp.equals("") | lotep.equals("") | (datep.equals(""))){
+        switch (item.getItemId()) {
+            case R.id.icon_add: {
+                if (nombrep.equals("") | marcap.equals("") | IDp.equals("") | lotep.equals("") | (datep.equals(""))) {
                     validacion();
-                }
-                else{
+                } else {
 
-                    Productos p = new Productos ();
+                    Productos p = new Productos();
                     p.setId(UUID.randomUUID().toString());
                     p.setNombre(nombrep);
                     p.setFecha(datep);
@@ -145,10 +139,11 @@ public class inicioactivity extends AppCompatActivity {
                     Toast.makeText(this, "Se agrego el producto", Toast.LENGTH_SHORT).show();
                     Limpiarcajas();
 
-                }break;
+                }
+                break;
             }
 
-            case R.id.icon_save:{
+            case R.id.icon_save: {
 
                 Productos p = new Productos();
                 p.setId(productoSelected.getId());
@@ -163,7 +158,7 @@ public class inicioactivity extends AppCompatActivity {
                 Limpiarcajas();
                 break;
             }
-            case R.id.icon_delete:{
+            case R.id.icon_delete: {
 
                 Productos p = new Productos();
                 p.setId((productoSelected).getId());
@@ -174,7 +169,8 @@ public class inicioactivity extends AppCompatActivity {
                 Limpiarcajas();
                 break;
             }
-            default:break;
+            default:
+                break;
         }
         return true;
     }
@@ -194,29 +190,29 @@ public class inicioactivity extends AppCompatActivity {
         String lotep = lote.getText().toString();
         String datep = date.getText().toString();
 
-        if (nombrep.equals("")){
+        if (nombrep.equals("")) {
             nombre.setError("Required");
         }
-        if (marcap.equals("")){
+        if (marcap.equals("")) {
             marca.setError("Required");
         }
-        if (IDp.equals("")){
+        if (IDp.equals("")) {
             ID.setError("Required");
         }
-        if (lotep.equals("")){
+        if (lotep.equals("")) {
             lote.setError("Required");
         }
-        if (datep.equals("")){
+        if (datep.equals("")) {
             date.setError("Required");
         }
     }
 
-     public void escogerperfil (View view) {
+    public void escogerperfil(View view) {
         Intent i = new Intent(this, escogerperfil.class);
         startActivity(i);
     }
 
-     public void notificacion (View view){
+    public void notificacion(View view) {
         Intent i = new Intent(this, notificacion.class);
         startActivity(i);
     }

@@ -1,8 +1,8 @@
 package com.proyecto.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class notificacion extends AppCompatActivity {
 

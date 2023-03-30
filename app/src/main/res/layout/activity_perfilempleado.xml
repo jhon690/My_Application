@@ -52,7 +52,7 @@
             android:layout_width="136dp"
             android:layout_height="144dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_perfil"/>
+            app:srcCompat="@drawable/ic_perfil" />
 
         <View
             android:id="@+id/divider"
@@ -67,8 +67,8 @@
             android:layout_width="366dp"
             android:layout_height="42dp"
             android:autoSizeTextType="uniform"
-            android:gravity="center"
             android:fontFamily="sans-serif-black"
+            android:gravity="center"
             android:text="CARLOS SANTIAGO SANDOVAL MEDINA"
             android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
@@ -135,9 +135,9 @@
             android:layout_weight="1"
             android:autoSizeTextType="uniform"
             android:gravity="center"
+            android:onClick="agregarproducto"
             android:text="Agregar producto"
-            android:textColor="@color/white"
-            android:onClick="agregarproducto"/>
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
@@ -166,8 +166,7 @@
             android:autoSizeTextType="uniform"
             android:gravity="center"
             android:text="Cerrar sesion"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

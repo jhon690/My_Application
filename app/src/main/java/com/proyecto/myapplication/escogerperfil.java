@@ -1,11 +1,11 @@
 package com.proyecto.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class escogerperfil extends AppCompatActivity {
 
@@ -20,6 +20,7 @@ public class escogerperfil extends AppCompatActivity {
         Intent i = new Intent(this, iniciarsesionempleado.class);
         startActivity(i);
     }
+
     public void iniciarsesionadministrador(View view) {
         Toast.makeText(getApplicationContext(), "Iniciar sesion como administrador", Toast.LENGTH_SHORT).show();
         Intent i = new Intent(this, iniciarsesionadministrador.class);

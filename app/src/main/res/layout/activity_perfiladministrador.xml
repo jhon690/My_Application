@@ -12,8 +12,8 @@
         android:layout_width="299dp"
         android:layout_height="33dp"
         android:autoSizeTextType="uniform"
-        android:gravity="center"
         android:fontFamily="sans-serif-black"
+        android:gravity="center"
         android:text="Mi Perfil(administrador)"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
@@ -59,8 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/gris"
-            android:background="?android:attr/listDivider" />
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/gris" />
 
         <TextView
 
@@ -117,13 +117,12 @@
         android:layout_weight="1"
         android:background="@drawable/diseno_boton1"
         android:gravity="center"
-        android:orientation="horizontal"
         android:onClick="registrarempleado"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UnknownId"
-        >
+        tools:ignore="UnknownId">
 
         <TextView
             android:id="@+id/textView5"
@@ -146,13 +145,12 @@
         android:layout_weight="1"
         android:background="@drawable/diseno_boton1"
         android:gravity="center"
-        android:orientation="horizontal"
         android:onClick="cerrarsesion"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UnknownId"
-        >
+        tools:ignore="UnknownId">
 
         <TextView
             android:id="@+id/textView6"
@@ -175,12 +173,12 @@
         android:layout_weight="1"
         android:background="@drawable/diseno_boton1"
         android:gravity="center"
+        android:onClick="agregarproducto"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UnknownId"
-        android:onClick="agregarproducto">
+        tools:ignore="UnknownId">
 
         <TextView
 

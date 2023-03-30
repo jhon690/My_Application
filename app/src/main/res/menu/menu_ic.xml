@@ -3,17 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/icon_add"
+    <item
+        android:id="@+id/icon_add"
         android:icon="@drawable/ic_add"
         android:title="Edit done"
         app:showAsAction="ifRoom" />
 
-    <item android:id="@+id/icon_save"
+    <item
+        android:id="@+id/icon_save"
         android:icon="@drawable/ic_save"
         android:title="Edit done"
         app:showAsAction="always" />
 
-    <item android:id="@+id/icon_delete"
+    <item
+        android:id="@+id/icon_delete"
         android:icon="@drawable/ic_delete"
         android:title="Edit done"
         app:showAsAction="always" />

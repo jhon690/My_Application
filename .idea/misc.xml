@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/diseno_boton.xml" value="0.2455" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/diseno_boton1.xml" value="0.2415" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/diseno_boton2.xml" value="0.2455" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/diseno_boton3.xml" value="0.2455" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/img.xml" value="0.2455" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/img1.xml" value="0.2455" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/rectagle.xml" value="0.2455" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_correorecuperarcontrasena.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_escogerperfil.xml" value="0.25" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_iniciarsesionactivity.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_iniciarsesionadministrador.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_iniciarsesionempleado.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_inicioactivity.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_notificacion.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_perfiladministrador.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_perfilempleado.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_registrarmeactivity.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/registrarmeactivity.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/57317/AndroidStudioProjects/MyApplication3/app/src/main/res/menu/menu_ic.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

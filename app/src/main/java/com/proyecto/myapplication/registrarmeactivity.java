@@ -1,13 +1,13 @@
 package com.proyecto.myapplication;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -37,7 +37,7 @@ public class registrarmeactivity extends AppCompatActivity {
     }
 
 
-        public void onStart(){
+    public void onStart() {
 
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -46,9 +46,9 @@ public class registrarmeactivity extends AppCompatActivity {
 
     }
 
-    public void registrarusuario(View view){
+    public void registrarusuario(View view) {
 
-        if(contrasena.getText().toString().equals(contrasenaconfirmacion.getText().toString())){
+        if (contrasena.getText().toString().equals(contrasenaconfirmacion.getText().toString())) {
 
             mAuth.createUserWithEmailAndPassword(correo.getText().toString(), contrasena.getText().toString())
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -58,7 +58,7 @@ public class registrarmeactivity extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
                                 Toast.makeText(getApplicationContext(), "Registrado exitosamente", Toast.LENGTH_SHORT).show();
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                                Intent i = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(i);
                                 //updateUI(user);
                             } else {
@@ -70,7 +70,7 @@ public class registrarmeactivity extends AppCompatActivity {
                             // ...
                         }
                     });
-        }else{
+        } else {
 
             Toast.makeText(this, "Las contraseñas no son las mimas", Toast.LENGTH_SHORT).show();
 

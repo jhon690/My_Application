@@ -1,12 +1,12 @@
 package com.proyecto.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -39,19 +39,19 @@ public class perfilempleado extends AppCompatActivity {
     /*private void starActivity(Intent intent) {
     }*/
 
-    public void cerrarsesion(View view){
+    public void cerrarsesion(View view) {
         Toast.makeText(getApplicationContext(), "Sesion cerrada con exito.", Toast.LENGTH_SHORT).show();
-        Intent i= new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }
 
-    public void agregarproducto(View view){
-        Intent i= new Intent(this, inicioactivity.class);
+    public void agregarproducto(View view) {
+        Intent i = new Intent(this, inicioactivity.class);
         startActivity(i);
     }
 
-    public void cambiarcontrasena(View view){
-        Intent i= new Intent(this, correorecuperarcontrasena.class);
+    public void cambiarcontrasena(View view) {
+        Intent i = new Intent(this, correorecuperarcontrasena.class);
         startActivity(i);
     }
 

@@ -1,13 +1,13 @@
 package com.proyecto.myapplication;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -33,7 +33,7 @@ public class iniciarsesionactivity extends AppCompatActivity {
         contrasena = findViewById(R.id.contrasena);
     }
 
-        public void onStart() {
+    public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -41,9 +41,9 @@ public class iniciarsesionactivity extends AppCompatActivity {
 
     }
 
-   public void iniciarsesion(View view){
+    public void iniciarsesion(View view) {
 
-        mAuth.signInWithEmailAndPassword(correo.getText().toString().trim(),contrasena.getText().toString())
+        mAuth.signInWithEmailAndPassword(correo.getText().toString().trim(), contrasena.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -51,7 +51,7 @@ public class iniciarsesionactivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(getApplicationContext(), "Sesion iniciada con exito.", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Intent i= new Intent(getApplicationContext(), inicioactivity.class);
+                            Intent i = new Intent(getApplicationContext(), inicioactivity.class);
                             startActivity(i);
                             //updateUI(user);
                         } else {
@@ -65,7 +65,7 @@ public class iniciarsesionactivity extends AppCompatActivity {
                 });
     }
 
-        public void ircorreorecuparcontrasena(View view){
+    public void ircorreorecuparcontrasena(View view) {
         Intent i = new Intent(this, correorecuperarcontrasena.class);
         startActivity(i);
     }

@@ -15,37 +15,36 @@
         app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183"
-        />
+        app:layout_constraintVertical_bias="0.183" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="154dp"
         android:layout_height="45dp"
-        android:text="Iniciar Sesion"
         android:background="@drawable/diseno_boton"
+        android:onClick="iniciarsesion"
+        android:text="Iniciar Sesion"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556"
-        android:onClick="iniciarsesion"/>
+        app:layout_constraintVertical_bias="0.556" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="154dp"
         android:layout_height="45dp"
-        android:text="Registrarme"
         android:background="@drawable/diseno_boton"
+        android:onClick="registrarusuario"
+        android:text="Registrarme"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556"
-        android:onClick="registrarusuario"/>
+        app:layout_constraintVertical_bias="0.556" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

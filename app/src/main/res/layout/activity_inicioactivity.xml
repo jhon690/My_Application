@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:padding="12dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
     tools:context=".inicioactivity">
 
     <LinearLayout
@@ -37,8 +37,8 @@
             android:id="@+id/imagenperfil"
             android:layout_width="64dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_perfil"
-            android:onClick="escogerperfil"/>
+            android:onClick="escogerperfil"
+            app:srcCompat="@drawable/ic_perfil" />
 
         <ImageButton
             android:id="@+id/imagennotificacion"
@@ -55,10 +55,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="15dp"
         android:fontFamily="sans-serif-medium"
-        android:hint="Nombre del producto" />
+        android:hint="Nombre del producto"
+        android:inputType="textPersonName"
+        android:paddingTop="15dp" />
 
     <EditText
         android:id="@+id/marca"
@@ -66,19 +66,19 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
+        android:hint="Marca del producto"
         android:inputType="textPersonName"
-        android:paddingTop="15dp"
-        android:hint="Marca del producto" />
+        android:paddingTop="15dp" />
 
     <EditText
         android:id="@+id/ID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="15dp"
         android:fontFamily="sans-serif-medium"
-        android:hint="ID" />
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:paddingTop="15dp" />
 
     <EditText
         android:id="@+id/lote"
@@ -94,9 +94,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="date"
         android:fontFamily="sans-serif-medium"
-        android:hint="Fecha en que se agrego el producto"/>
+        android:hint="Fecha en que se agrego el producto"
+        android:inputType="date" />
 
     <TextView
         android:id="@+id/textView"
@@ -114,7 +114,7 @@
     <ListView
         android:id="@+id/productos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

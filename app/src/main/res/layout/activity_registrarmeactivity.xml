@@ -41,8 +41,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Agrega una contraseña mayor a 5 caracteres"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
 
         <EditText
 
@@ -58,11 +57,11 @@
             android:id="@+id/iniciarsesionbtm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="registrarme"
-            android:onClick="registrarusuario"
+            android:layout_margin="20dp"
             android:background="@drawable/diseno_boton"
-            android:textColor="@color/black"
-            android:layout_margin="20dp"/>
+            android:onClick="registrarusuario"
+            android:text="registrarme"
+            android:textColor="@color/black" />
 
     </LinearLayout>
 

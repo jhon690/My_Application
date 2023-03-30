@@ -51,6 +51,8 @@ public class Productos {
     }
 
     @Override
-    public String toString() {return nombre;}
+    public String toString() {
+        return nombre;
+    }
 
 }

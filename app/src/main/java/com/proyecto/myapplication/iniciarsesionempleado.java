@@ -1,13 +1,13 @@
 package com.proyecto.myapplication;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -42,9 +42,9 @@ public class iniciarsesionempleado extends AppCompatActivity {
 
     }
 
-    public void iniciarsesion(View view){
+    public void iniciarsesion(View view) {
 
-        mAuth.signInWithEmailAndPassword(correo.getText().toString().trim(),contrasena.getText().toString())
+        mAuth.signInWithEmailAndPassword(correo.getText().toString().trim(), contrasena.getText().toString())
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -52,7 +52,7 @@ public class iniciarsesionempleado extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(getApplicationContext(), "Sesion iniciada con exito.", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Intent i= new Intent(getApplicationContext(), perfilempleado.class);
+                            Intent i = new Intent(getApplicationContext(), perfilempleado.class);
                             startActivity(i);
                             //updateUI(user);
                         } else {

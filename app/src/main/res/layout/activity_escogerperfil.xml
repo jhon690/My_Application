@@ -49,17 +49,16 @@
         android:layout_width="351dp"
         android:layout_height="46dp"
         android:autoSizeTextType="uniform"
-        android:gravity="center"
         android:background="@drawable/diseno_boton"
-        android:textColor="@color/black"
-        android:text="SOY ADMINISTRADOR"
+        android:gravity="center"
         android:onClick="iniciarsesionadministrador"
+        android:text="SOY ADMINISTRADOR"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441"
-        />
+        app:layout_constraintVertical_bias="0.441" />
 
     <Button
         android:id="@+id/empleado"
